@@ -30,6 +30,7 @@ function module:InitializeQuests()
 	end
 
 	AddQuest(384,	Z.DUN_MOROGH,			46.8,	52.5,	"Alliance")
+	AddQuest(564,	Z.HILLSBRAD_FOOTHILLS,	52.4,	56.0,	"Alliance")
 	AddQuest(4161,	Z.TELDRASSIL,			57.0,	61.2,	"Alliance")
 	AddQuest(6610,	Z.TANARIS,			52.6,	29.0,	"Neutral")
 	AddQuest(8313,	Z.SILITHUS,			43.6,	42.0,	"Neutral")

@@ -223,10 +223,8 @@ function module:InitializeRecipes()
     recipe:SetSkillLevels(150, 150, 190, 210, 230)
     recipe:SetRecipeItem(3736, "BIND_ON_PICKUP")
     recipe:SetCraftedItem(3728, "BIND_ON_EQUIP")
-    recipe:AddFilters(F.ALLIANCE, F.HORDE, F.HEALER, F.CASTER)
-    recipe:AddTrainer(1355, 1382, 1430, 1699, 2818, 3026, 3067, 3399, 4210, 4552, 4894, 5159, 5482, 6286, 16253, 16719,
-        17246, 18987, 18993, 19185, 19369, 26905, 26953, 26972, 26989, 28705, 29631, 33587, 33619, 42288, 42506, 45550,
-        46709, 47405, 49789, 54232)
+    recipe:AddFilters(F.ALLIANCE, F.HEALER, F.CASTER)
+    recipe:AddQuest(564)
 
     -- Soothing Turtle Bisque -- 3400
     recipe = AddRecipe(3400, V.ORIG, Q.COMMON)
