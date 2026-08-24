@@ -533,6 +533,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(13939, "BIND_ON_EQUIP")
     recipe:SetCraftedItem(6887, "BIND_ON_EQUIP")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
+    recipe:AddVendor(8137)
     recipe:AddTrainer(1355, 1382, 1430, 1699, 2818, 3026, 3067, 3087, 3399, 4210, 4552, 4894, 5159, 5482, 6286, 8306,
         16253, 16277, 16676, 16719, 17246, 18987, 18988, 18993, 19185, 19369, 26905, 26953, 26972, 26989, 28705, 29631,
         33587, 33619, 42288, 42506, 45550, 46709, 47405, 49789, 54232)
@@ -621,7 +622,7 @@ function module:InitializeRecipes()
     recipe:SetRecipeItem(16767, "BIND_ON_EQUIP")
     recipe:SetCraftedItem(16766, "BIND_ON_EQUIP")
     recipe:AddFilters(F.ALLIANCE, F.HORDE)
-    recipe:AddLimitedVendor(48060, 3, 54232, 1)
+    recipe:AddLimitedVendor(8139, 1, 48060, 3, 54232, 1)
 
     -- Mithril Head Trout -- 20916
     recipe = AddRecipe(20916, V.ORIG, Q.COMMON)
