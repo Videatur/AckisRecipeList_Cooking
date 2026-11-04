@@ -1,9 +1,10 @@
-## Interface: 11509, 20506, 50504
+## Interface: 16001
 ## Title: Ackis Recipe Classic: Cooking
 ## Notes: Cooking data for Ackis Recipe List Classic.
 ## Author: Videatur
-## Version: 11.0.0
+## Version: 12.0.0
 ## X-Credits: Original authors: Ackis, Pompy, Ressy, Torhal.
+## IconTexture: Interface\Icons\Inv_misc_food_64
 ## Dependencies: AckisRecipeList
 ## LoadOnDemand: 1
 
@@ -15,3 +16,5 @@ Trainers.lua
 Vendors.lua
 Recipes.lua
 Discoveries.lua
+Guide.lua
+FishingGuide.lua
