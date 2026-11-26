@@ -1,3 +1,4 @@
+-- Generated candidate; review before replacing the installed module guide.
 local _, private = ...
 local addon = private.addon
 if not addon then return end
@@ -94,7 +95,7 @@ module.Guides["fishing-cooking"] = {
 },
 {
 ["instructions"] = {
-"Learn Fishing from Fenn Fairweather in Shen'dar Village or Baelann Swiftcurrent in Valanaar. Buy supplies from Belandiel Farflight or Baelann. Buy both starter recipes from Nyalah Brightfire in Valanaar. Fish inland lakes or rivers near the trainers.",
+"Learn Fishing from Fenn Fairweather in Shen'dar Village or Baelann Swiftcurrent in Valanaar. Buy supplies from Belandiel Farflight or Baelann. Buy both starter recipes from Nyoma in Dolanaar, Teldrassil. Fish inland lakes or rivers near the trainers.",
 "Equip a Fishing Pole and apply a Shiny Bauble. Fish until Fishing 75. Estimated catches: 45 Smallfish and 30 Mud Snapper.",
 "Keep cooking fish. Train Journeyman Fishing at character level 10 before continuing. Save any Aquadynamic Fish Attractors for later waters."
 },
@@ -114,7 +115,7 @@ module.Guides["fishing-cooking"] = {
 "fenn-fairweather",
 "baelann-swiftcurrent",
 "belandiel-farflight",
-"nyalah-brightfire"
+"nyoma"
 },
 ["title"] = "Zephras Isle"
 }
@@ -129,7 +130,7 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "city-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 75,
 ["id"] = "fishing-75-130",
 ["label"] = "F 75-130",
 ["skill"] = "Fishing",
@@ -198,7 +199,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 50,
 ["id"] = "cooking-50-100",
 ["label"] = "C 50-100",
 ["skill"] = "Cooking",
@@ -234,12 +235,12 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "expert-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 125,
 ["id"] = "expert-fishing-book",
 ["label"] = "F 125+",
 ["sourcePhase"] = "Fishing (130-205) and Cooking (100-175)",
 ["title"] = "Expert Fishing and Booty Bay recipes",
-["to"] = 130,
+["to"] = 125,
 ["variants"] = {
 {
 ["instructions"] = {
@@ -262,7 +263,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 130,
 ["id"] = "fishing-130-205",
 ["label"] = "F 130-205",
 ["skill"] = "Fishing",
@@ -291,7 +292,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 125,
 ["id"] = "expert-cooking-book",
 ["label"] = "C 125+",
 ["sourcePhase"] = "Fishing (130-205) and Cooking (100-175)",
@@ -316,7 +317,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 100,
 ["id"] = "cooking-100-175",
 ["label"] = "C 100-175",
 ["skill"] = "Cooking",
@@ -352,7 +353,7 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "artisan-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 205,
 ["id"] = "fishing-205-225",
 ["label"] = "F 205-225",
 ["skill"] = "Fishing",
@@ -378,7 +379,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 225,
 ["id"] = "artisan-fishing-quest",
 ["label"] = "F 225",
 ["skill"] = "Fishing",
@@ -388,8 +389,8 @@ module.Guides["fishing-cooking"] = {
 ["variants"] = {
 {
 ["instructions"] = {
-"At level 35 and Fishing 225, accept the Artisan Fishing quest. Catch each quest fish in its zone shown in the item tooltip, then return to Nat Pagle.",
-"Use stronger lures for the quest fish. Kilxx in Ratchet and the listed Feralas supplier are possible sources; check their stock."
+"At character level 35 and Fishing 225, accept Nat Pagle, Angler Extreme (6607). Catch Feralas Ahi at Verdantis River, Misty Reed Mahi Mahi at Misty Reed Strand, Sar'theris Striker at Sar'theris Strand and Savage Coast Blue Sailfin at Savage Coast. Return to Nat Pagle.",
+"If out of Nightcrawlers, buy five from Kilxx in Ratchet or Helenia Olden in Dustwallow Marsh. Bright Baubles from Vivianna can also help with the Feralas quest catch."
 },
 ["items"] = {
 16967,
@@ -406,7 +407,8 @@ module.Guides["fishing-cooking"] = {
 ["npcs"] = {
 "nat-pagle",
 "kilxx",
-"vivianna"
+"vivianna",
+"helenia-olden"
 },
 ["title"] = "Nat Pagle, Angler Extreme"
 }
@@ -421,7 +423,7 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "finish-cooking",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 225,
 ["id"] = "fishing-225-255",
 ["label"] = "F 225-255",
 ["skill"] = "Fishing",
@@ -447,7 +449,7 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
-["from"] = 1,
+["from"] = 175,
 ["id"] = "cooking-175-225",
 ["label"] = "C 175-225",
 ["skill"] = "Cooking",
@@ -492,17 +494,15 @@ module.Guides["fishing-cooking"] = {
 ["variants"] = {
 {
 ["instructions"] = {
-"Requires character level 35 and Cooking 225. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss to Dirge Quikcleave in Gadgetzan. Complete Clamlette Surprise for Artisan Cooking.",
-"Rocs in Tanaris drop eggs. Open Big-mouth Clams from Steeljaw Snappers and Surf Gliders for clam meat. Buy cheese from a supplier.",
-"Visit Gikkix at Steamwheedle Port and buy the Spotted Yellowtail, Nightfin Soup and Poached Sunscale Salmon recipes."
+"Requires character level 35 and Cooking 225. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss to Dirge Quikcleave in Gadgetzan. Complete Clamlette Surprise (6610) for Artisan Cooking.",
+"Rocs, Fire Rocs and Searing Rocs in Tanaris drop eggs. Open Big-mouth Clams from Steeljaw Snappers and Surf Gliders for clam meat. Buy cheese from a supplier.",
+"Buy Recipe: Nightfin Soup from Gikkix in Steamwheedle Port."
 },
 ["items"] = {
 12207,
 7974,
 8932,
-13939,
-13945,
-13946
+13945
 },
 ["materials"] = {
 
@@ -525,15 +525,7 @@ module.Guides["fishing-cooking"] = {
 20
 },
 {
-13939,
-1
-},
-{
 13945,
-1
-},
-{
-13946,
 1
 }
 },
@@ -560,12 +552,11 @@ module.Guides["fishing-cooking"] = {
 ["variants"] = {
 {
 ["instructions"] = {
-"Buy Baked Salmon and 10 Nightcrawlers from your faction supplier.",
+"Buy 12 Nightcrawlers from your faction supplier.",
 "Apply Nightcrawlers and fish inland Feralas until Fishing 300. Renew the lure every 10 minutes. Avoid Jademir Lake.",
-"Keep Redgill, Nightfin Snapper, Sunscale Salmon and any Whitescale Salmon for cooking."
+"Keep Redgill and Nightfin Snapper for cooking. Nightfin Snapper stop biting from 12:00 to 18:00 game time."
 },
 ["items"] = {
-13949,
 6530
 },
 ["materials"] = {
@@ -576,12 +567,8 @@ module.Guides["fishing-cooking"] = {
 },
 ["shoppingRequirements"] = {
 {
-13949,
-1
-},
-{
 6530,
-10
+12
 }
 },
 ["title"] = "Feralas: Feathermoon Stronghold"
@@ -610,7 +597,7 @@ module.Guides["fishing-cooking"] = {
 8365
 },
 ["instructions"] = {
-"Cook saved Mithril Head Trout toward Cooking 250. Supplement with Filet of Redgill if saved fish run out."
+"Cook saved Mithril Head Trout. Learn Filet of Redgill and cook your Raw Redgill to finish this stage."
 },
 ["items"] = {
 8365
@@ -650,18 +637,42 @@ module.Guides["fishing-cooking"] = {
 }
 },
 {
+["variants"] = {
+{
+["spellID"] = 18241,
+["title"] = "Filet of Redgill",
+["items"] = {
+13941,
+13758
+},
+["materials"] = {
+
+},
+["npcs"] = {
+
+},
+["shoppingRequirements"] = {
+{
+13941,
+1
+}
+},
+["instructions"] = {
+"Use your Raw Redgill to reach Cooking 285. Buy the recipe from Kelsey Yance in Booty Bay if needed. You can start Nightfin Soup at 250 if you run out of Redgill."
+}
+}
+},
+["to"] = 285,
+["title"] = "Filet of Redgill",
 ["from"] = 250,
-["id"] = "cooking-250-275",
-["label"] = "C 250-275",
-["skill"] = "Cooking",
+["id"] = "cooking-250-285",
 ["sourcePhase"] = "Leveling Cooking to 300",
-["title"] = "Nightfin Soup",
-["to"] = 275,
+["skill"] = "Cooking",
+["label"] = "C 250-285"
+},
+{
 ["variants"] = {
 {
-["instructions"] = {
-"Learn Nightfin Soup. Each craft uses one Raw Nightfin Snapper and one Refreshing Spring Water. Cook toward 275; catch or buy extra fish if needed."
-},
 ["items"] = {
 13945,
 13759,
@@ -673,90 +684,21 @@ module.Guides["fishing-cooking"] = {
 ["npcs"] = {
 
 },
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
-},
-{
 ["instructions"] = {
-"Learn Poached Sunscale Salmon. Cook Raw Sunscale Salmon toward 275; catch or buy extra fish if needed."
+"Learn Nightfin Soup from the recipe sold by Gikkix and buy around 20 Refreshing Spring Water. Cook one Raw Nightfin Snapper with one water per craft.",
+"If you run short of Nightfin, try any Redgill you still have or fish outside 12:00-18:00 game time."
 },
-["items"] = {
-13946,
-13760
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-}
-}
-},
-{
-["from"] = 275,
-["id"] = "cooking-275-300",
-["label"] = "C 275-300",
-["skill"] = "Cooking",
-["sourcePhase"] = "Leveling Cooking to 300",
 ["title"] = "Nightfin Soup",
+["spellID"] = 18243
+}
+},
 ["to"] = 300,
-["variants"] = {
-{
-["instructions"] = {
-"Continue Nightfin Soup until Cooking 300. Bring water and extra fish for yellow skill gains."
-},
-["items"] = {
-13945,
-13759,
-159
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
-},
-{
-["instructions"] = {
-"Continue Poached Sunscale Salmon until Cooking 300. Allow extra fish for yellow skill gains."
-},
-["items"] = {
-13946,
-13760
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-},
-{
-["instructions"] = {
-"At Cooking 275, learn Baked Salmon and cook any Raw Whitescale Salmon. Supplement with other fish recipes as needed to reach 300."
-},
-["items"] = {
-13949,
-13889
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18247,
-["title"] = "Baked Salmon"
-}
-}
+["title"] = "Nightfin Soup",
+["from"] = 285,
+["id"] = "cooking-285-300",
+["sourcePhase"] = "Leveling Cooking to 300",
+["skill"] = "Cooking",
+["label"] = "C 285-300"
 }
 },
 ["title"] = "Artisan Cooking to 300",
@@ -835,7 +777,7 @@ module.Guides["fishing-cooking"] = {
 ["mapID"] = 1446,
 ["name"] = "Gikkix",
 ["x"] = 66.7,
-["y"] = 22.2,
+["y"] = 22.1,
 ["zone"] = Z["TANARIS"]
 },
 ["gretta-ganter"] = {
@@ -846,6 +788,15 @@ module.Guides["fishing-cooking"] = {
 ["x"] = 31.6,
 ["y"] = 44.7,
 ["zone"] = Z["DUN_MOROGH"]
+},
+["helenia-olden"] = {
+["faction"] = "Alliance",
+["id"] = "helenia-olden",
+["mapID"] = 1445,
+["name"] = "Helenia Olden",
+["x"] = 66.4,
+["y"] = 51.4,
+["zone"] = Z["DUSTWALLOW_MARSH"]
 },
 ["kelsey-yance"] = {
 ["faction"] = "Neutral",
@@ -861,7 +812,7 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "kilxx",
 ["mapID"] = 1413,
 ["name"] = "Kilxx",
-["x"] = 62.7,
+["x"] = 62.8,
 ["y"] = 38.2,
 ["zone"] = Z["THE_BARRENS"]
 },
@@ -915,7 +866,7 @@ module.Guides["fishing-cooking"] = {
 ["id"] = "old-man-heming",
 ["mapID"] = 1434,
 ["name"] = "Old Man Heming",
-["x"] = 27.5,
+["x"] = 27.4,
 ["y"] = 77.1,
 ["zone"] = Z["STRANGLETHORN_VALE"]
 },
@@ -969,13 +920,8 @@ module.Guides["fishing-cooking"] = {
 [12207] = "Giant Egg",
 [13758] = "Raw Redgill",
 [13759] = "Raw Nightfin Snapper",
-[13760] = "Raw Sunscale Salmon",
-[13889] = "Raw Whitescale Salmon",
-[13939] = "Recipe: Spotted Yellowtail",
 [13941] = "Recipe: Filet of Redgill",
 [13945] = "Recipe: Nightfin Soup",
-[13946] = "Recipe: Poached Sunscale Salmon",
-[13949] = "Recipe: Baked Salmon",
 [159] = "Refreshing Spring Water",
 [16072] = "Expert Cookbook",
 [16083] = "Expert Fishing - The Bass and You",
@@ -995,7 +941,7 @@ module.Guides["fishing-cooking"] = {
 [6328] = "Recipe: Longjaw Mud Snapper",
 [6330] = "Recipe: Bristle Whisker Catfish",
 [6529] = "Shiny Bauble",
-[6530] = "Nightcrawler",
+[6530] = "Nightcrawlers",
 [6532] = "Bright Baubles",
 [6533] = "Aquadynamic Fish Attractor",
 [7974] = "Zesty Clam Meat",
@@ -1024,33 +970,10 @@ Z["FERALAS"]
 Z["FERALAS"]
 }
 },
-[13760] = {
-["kind"] = "fish",
-["note"] = "Fish inland Feralas, excluding Jademir Lake. Keep useful fish for Cooking; catches vary by time of day.",
-["zones"] = {
-Z["FERALAS"]
-}
-},
-[13889] = {
-["kind"] = "fish",
-["note"] = "Later fishing catch; not needed to reach Cooking 225.",
-["zones"] = {
-Z["FERALAS"]
-}
-},
-[13939] = {
-["kind"] = "supply"
-},
 [13941] = {
 ["kind"] = "supply"
 },
 [13945] = {
-["kind"] = "supply"
-},
-[13946] = {
-["kind"] = "supply"
-},
-[13949] = {
 ["kind"] = "supply"
 },
 [159] = {
@@ -1225,11 +1148,15 @@ Z["DUSTWALLOW_MARSH"]
 {
 6529,
 1
+},
+{
+159,
+20
 }
 },
 ["source"] = "https://www.wow-professions.com/forever/fishing-and-cooking-leveling-guide",
-["sourceDate"] = "2026-10-24",
-["sourceHash"] = "cac173a28fb20bc919d89c5f61fed71b08a25a8d7b28c112b5a4c0017c4fcbce",
+["sourceDate"] = "2026-11-20",
+["sourceHash"] = "ada748b581fcd2085a223a850e07bfc923af6a03803164b095db1dcc8242f480",
 ["supplies"] = {
 {
 ["faction"] = "Neutral",
@@ -1291,9 +1218,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "gikkix",
 ["items"] = {
-[13939] = true,
 [13945] = true,
-[13946] = true,
 [159] = true,
 [6289] = true,
 [6303] = true,
@@ -1302,7 +1227,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1446,
 ["name"] = "Gikkix",
 ["x"] = 66.7,
-["y"] = 22.2,
+["y"] = 22.1,
 ["zone"] = Z["TANARIS"]
 },
 {
@@ -1321,6 +1246,20 @@ Z["DUSTWALLOW_MARSH"]
 ["x"] = 31.6,
 ["y"] = 44.7,
 ["zone"] = Z["DUN_MOROGH"]
+},
+{
+["faction"] = "Alliance",
+["id"] = "helenia-olden",
+["items"] = {
+[6256] = true,
+[6530] = true,
+[6532] = true
+},
+["mapID"] = 1445,
+["name"] = "Helenia Olden",
+["x"] = 66.4,
+["y"] = 51.4,
+["zone"] = Z["DUSTWALLOW_MARSH"]
 },
 {
 ["faction"] = "Neutral",
@@ -1351,7 +1290,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1413,
 ["name"] = "Kilxx",
-["x"] = 62.7,
+["x"] = 62.8,
 ["y"] = 38.2,
 ["zone"] = Z["THE_BARRENS"]
 },
@@ -1372,10 +1311,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "nyalah-brightfire",
 ["items"] = {
-[159] = true,
-[6325] = true,
-[6326] = true,
-[6328] = true
+[159] = true
 },
 ["mapID"] = 2521,
 ["name"] = "Nyalah Brightfire",
@@ -1405,7 +1341,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1434,
 ["name"] = "Old Man Heming",
-["x"] = 27.5,
+["x"] = 27.4,
 ["y"] = 77.1,
 ["zone"] = Z["STRANGLETHORN_VALE"]
 },
@@ -1435,21 +1371,15 @@ Z["DUSTWALLOW_MARSH"]
 ["x"] = 41.9,
 ["y"] = 67.1,
 ["zone"] = Z["ELWYNN_FOREST"]
-},
-{
-["faction"] = "Alliance",
-["id"] = "vivianna",
-["items"] = {
-[13949] = true
-},
-["mapID"] = 1444,
-["name"] = "Vivianna",
-["x"] = 31.3,
-["y"] = 43.4,
-["zone"] = Z["FERALAS"]
 }
 },
 ["title"] = "Fishing + Cooking",
+["stepProgressMigrations"] = {
+["cooking-275-300"] = {
+"cooking-250-285",
+"cooking-285-300"
+}
+},
 ["tools"] = {
 {
 ["itemID"] = 6256,
@@ -1544,7 +1474,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 {
 ["instructions"] = {
-"Learn Fishing from Fenn Fairweather in Shen'dar Village or Baelann Swiftcurrent in Valanaar. Buy supplies from Belandiel Farflight or Baelann. Buy both starter recipes from Nyalah Brightfire in Valanaar. Fish inland lakes or rivers near the trainers.",
+"Learn Fishing from Fenn Fairweather in Shen'dar Village or Baelann Swiftcurrent in Valanaar. Buy supplies from Belandiel Farflight or Baelann. Buy both starter recipes from Lizbeth Cromwell in Undercity. Fish inland lakes or rivers near the trainers.",
 "Equip a Fishing Pole and apply a Shiny Bauble. Fish until Fishing 75. Estimated catches: 45 Smallfish and 30 Mud Snapper.",
 "Keep cooking fish. Train Journeyman Fishing at character level 10 before continuing. Save any Aquadynamic Fish Attractors for later waters."
 },
@@ -1564,7 +1494,7 @@ Z["DUSTWALLOW_MARSH"]
 "fenn-fairweather",
 "baelann-swiftcurrent",
 "belandiel-farflight",
-"nyalah-brightfire"
+"lizbeth-cromwell"
 },
 ["title"] = "Zephras Isle"
 }
@@ -1579,7 +1509,7 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "city-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 75,
 ["id"] = "fishing-75-130",
 ["label"] = "F 75-130",
 ["skill"] = "Fishing",
@@ -1715,7 +1645,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 50,
 ["id"] = "cooking-50-100",
 ["label"] = "C 50-100",
 ["skill"] = "Cooking",
@@ -1753,12 +1683,12 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "expert-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 125,
 ["id"] = "expert-fishing-book",
 ["label"] = "F 125+",
 ["sourcePhase"] = "Fishing (130-205) and Cooking (100-175)",
 ["title"] = "Expert Fishing and Booty Bay recipes",
-["to"] = 130,
+["to"] = 125,
 ["variants"] = {
 {
 ["instructions"] = {
@@ -1781,7 +1711,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 130,
 ["id"] = "fishing-130-205",
 ["label"] = "F 130-205",
 ["skill"] = "Fishing",
@@ -1811,7 +1741,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 125,
 ["id"] = "expert-cooking-book",
 ["label"] = "C 125+",
 ["sourcePhase"] = "Fishing (130-205) and Cooking (100-175)",
@@ -1839,7 +1769,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 100,
 ["id"] = "cooking-100-175",
 ["label"] = "C 100-175",
 ["skill"] = "Cooking",
@@ -1875,7 +1805,7 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "artisan-fishing",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 205,
 ["id"] = "fishing-205-225",
 ["label"] = "F 205-225",
 ["skill"] = "Fishing",
@@ -1901,7 +1831,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 225,
 ["id"] = "artisan-fishing-quest",
 ["label"] = "F 225",
 ["skill"] = "Fishing",
@@ -1911,7 +1841,7 @@ Z["DUSTWALLOW_MARSH"]
 ["variants"] = {
 {
 ["instructions"] = {
-"At level 35 and Fishing 225, accept the Artisan Fishing quest. Catch each quest fish in its zone shown in the item tooltip, then return to Nat Pagle.",
+"At character level 35 and Fishing 225, accept Nat Pagle, Angler Extreme (6607). Catch Feralas Ahi at Verdantis River, Misty Reed Mahi Mahi at Misty Reed Strand, Sar'theris Striker at Sar'theris Strand and Savage Coast Blue Sailfin at Savage Coast. Return to Nat Pagle.",
 "Use stronger lures for the quest fish. Kilxx in Ratchet and the listed Feralas supplier are possible sources; check their stock."
 },
 ["items"] = {
@@ -1944,7 +1874,7 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "finish-cooking",
 ["steps"] = {
 {
-["from"] = 1,
+["from"] = 225,
 ["id"] = "fishing-225-255",
 ["label"] = "F 225-255",
 ["skill"] = "Fishing",
@@ -1970,7 +1900,7 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
-["from"] = 1,
+["from"] = 175,
 ["id"] = "cooking-175-225",
 ["label"] = "C 175-225",
 ["skill"] = "Cooking",
@@ -2015,17 +1945,15 @@ Z["DUSTWALLOW_MARSH"]
 ["variants"] = {
 {
 ["instructions"] = {
-"Requires character level 35 and Cooking 225. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss to Dirge Quikcleave in Gadgetzan. Complete Clamlette Surprise for Artisan Cooking.",
-"Rocs in Tanaris drop eggs. Open Big-mouth Clams from Steeljaw Snappers and Surf Gliders for clam meat. Buy cheese from a supplier.",
-"Visit Gikkix at Steamwheedle Port and buy the Spotted Yellowtail, Nightfin Soup and Poached Sunscale Salmon recipes."
+"Requires character level 35 and Cooking 225. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss to Dirge Quikcleave in Gadgetzan. Complete Clamlette Surprise (6610) for Artisan Cooking.",
+"Rocs, Fire Rocs and Searing Rocs in Tanaris drop eggs. Open Big-mouth Clams from Steeljaw Snappers and Surf Gliders for clam meat. Buy cheese from a supplier.",
+"Buy Recipe: Nightfin Soup from Gikkix in Steamwheedle Port."
 },
 ["items"] = {
 12207,
 7974,
 8932,
-13939,
-13945,
-13946
+13945
 },
 ["materials"] = {
 
@@ -2048,15 +1976,7 @@ Z["DUSTWALLOW_MARSH"]
 20
 },
 {
-13939,
-1
-},
-{
 13945,
-1
-},
-{
-13946,
 1
 }
 },
@@ -2083,12 +2003,11 @@ Z["DUSTWALLOW_MARSH"]
 ["variants"] = {
 {
 ["instructions"] = {
-"Buy Baked Salmon and 10 Nightcrawlers from your faction supplier.",
+"Buy 12 Nightcrawlers from your faction supplier.",
 "Apply Nightcrawlers and fish inland Feralas until Fishing 300. Renew the lure every 10 minutes. Avoid Jademir Lake.",
-"Keep Redgill, Nightfin Snapper, Sunscale Salmon and any Whitescale Salmon for cooking."
+"Keep Redgill and Nightfin Snapper for cooking. Nightfin Snapper stop biting from 12:00 to 18:00 game time."
 },
 ["items"] = {
-13949,
 6530
 },
 ["materials"] = {
@@ -2099,12 +2018,8 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["shoppingRequirements"] = {
 {
-13949,
-1
-},
-{
 6530,
-10
+12
 }
 },
 ["title"] = "Feralas: Camp Mojache"
@@ -2133,7 +2048,7 @@ Z["DUSTWALLOW_MARSH"]
 8365
 },
 ["instructions"] = {
-"Cook saved Mithril Head Trout toward Cooking 250. Supplement with Filet of Redgill if saved fish run out."
+"Cook saved Mithril Head Trout. Learn Filet of Redgill and cook your Raw Redgill to finish this stage."
 },
 ["items"] = {
 8365
@@ -2173,18 +2088,42 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 {
+["variants"] = {
+{
+["spellID"] = 18241,
+["title"] = "Filet of Redgill",
+["items"] = {
+13941,
+13758
+},
+["materials"] = {
+
+},
+["npcs"] = {
+
+},
+["shoppingRequirements"] = {
+{
+13941,
+1
+}
+},
+["instructions"] = {
+"Use your Raw Redgill to reach Cooking 285. Buy the recipe from Kelsey Yance in Booty Bay if needed. You can start Nightfin Soup at 250 if you run out of Redgill."
+}
+}
+},
+["to"] = 285,
+["title"] = "Filet of Redgill",
 ["from"] = 250,
-["id"] = "cooking-250-275",
-["label"] = "C 250-275",
-["skill"] = "Cooking",
+["id"] = "cooking-250-285",
 ["sourcePhase"] = "Leveling Cooking to 300",
-["title"] = "Nightfin Soup",
-["to"] = 275,
+["skill"] = "Cooking",
+["label"] = "C 250-285"
+},
+{
 ["variants"] = {
 {
-["instructions"] = {
-"Learn Nightfin Soup. Each craft uses one Raw Nightfin Snapper and one Refreshing Spring Water. Cook toward 275; catch or buy extra fish if needed."
-},
 ["items"] = {
 13945,
 13759,
@@ -2196,90 +2135,21 @@ Z["DUSTWALLOW_MARSH"]
 ["npcs"] = {
 
 },
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
-},
-{
 ["instructions"] = {
-"Learn Poached Sunscale Salmon. Cook Raw Sunscale Salmon toward 275; catch or buy extra fish if needed."
+"Learn Nightfin Soup from the recipe sold by Gikkix and buy around 20 Refreshing Spring Water. Cook one Raw Nightfin Snapper with one water per craft.",
+"If you run short of Nightfin, try any Redgill you still have or fish outside 12:00-18:00 game time."
 },
-["items"] = {
-13946,
-13760
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-}
-}
-},
-{
-["from"] = 275,
-["id"] = "cooking-275-300",
-["label"] = "C 275-300",
-["skill"] = "Cooking",
-["sourcePhase"] = "Leveling Cooking to 300",
 ["title"] = "Nightfin Soup",
+["spellID"] = 18243
+}
+},
 ["to"] = 300,
-["variants"] = {
-{
-["instructions"] = {
-"Continue Nightfin Soup until Cooking 300. Bring water and extra fish for yellow skill gains."
-},
-["items"] = {
-13945,
-13759,
-159
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
-},
-{
-["instructions"] = {
-"Continue Poached Sunscale Salmon until Cooking 300. Allow extra fish for yellow skill gains."
-},
-["items"] = {
-13946,
-13760
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-},
-{
-["instructions"] = {
-"At Cooking 275, learn Baked Salmon and cook any Raw Whitescale Salmon. Supplement with other fish recipes as needed to reach 300."
-},
-["items"] = {
-13949,
-13889
-},
-["materials"] = {
-
-},
-["npcs"] = {
-
-},
-["spellID"] = 18247,
-["title"] = "Baked Salmon"
-}
-}
+["title"] = "Nightfin Soup",
+["from"] = 285,
+["id"] = "cooking-285-300",
+["sourcePhase"] = "Leveling Cooking to 300",
+["skill"] = "Cooking",
+["label"] = "C 285-300"
 }
 },
 ["title"] = "Artisan Cooking to 300",
@@ -2294,8 +2164,8 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "aska-mistrunner",
 ["mapID"] = 1456,
 ["name"] = "Aska Mistrunner",
-["x"] = 50.8,
-["y"] = 52.7,
+["x"] = 50.9,
+["y"] = 53.1,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 ["baelann-swiftcurrent"] = {
@@ -2358,7 +2228,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1446,
 ["name"] = "Gikkix",
 ["x"] = 66.7,
-["y"] = 22.2,
+["y"] = 22.1,
 ["zone"] = Z["TANARIS"]
 },
 ["harn-longcast"] = {
@@ -2393,7 +2263,7 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "kilxx",
 ["mapID"] = 1413,
 ["name"] = "Kilxx",
-["x"] = 62.7,
+["x"] = 62.8,
 ["y"] = 38.2,
 ["zone"] = Z["THE_BARRENS"]
 },
@@ -2402,8 +2272,8 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "kulwia",
 ["mapID"] = 1442,
 ["name"] = "Kulwia",
-["x"] = 45.4,
-["y"] = 59.4,
+["x"] = 45.3,
+["y"] = 59.3,
 ["zone"] = Z["STONETALON_MOUNTAINS"]
 },
 ["lautiki"] = {
@@ -2438,8 +2308,8 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "naal-mistrunner",
 ["mapID"] = 1456,
 ["name"] = "Naal Mistrunner",
-["x"] = 51.4,
-["y"] = 52.7,
+["x"] = 51.3,
+["y"] = 52.6,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 ["nat-pagle"] = {
@@ -2465,7 +2335,7 @@ Z["DUSTWALLOW_MARSH"]
 ["id"] = "old-man-heming",
 ["mapID"] = 1434,
 ["name"] = "Old Man Heming",
-["x"] = 27.5,
+["x"] = 27.4,
 ["y"] = 77.1,
 ["zone"] = Z["STRANGLETHORN_VALE"]
 },
@@ -2475,8 +2345,17 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1458,
 ["name"] = "Ronald Burch",
 ["x"] = 62.5,
-["y"] = 43.3,
+["y"] = 43.5,
 ["zone"] = Z["UNDERCITY"]
+},
+["sewa-mistrunner"] = {
+["faction"] = "Horde",
+["id"] = "sewa-mistrunner",
+["mapID"] = 1456,
+["name"] = "Sewa Mistrunner",
+["x"] = 55.9,
+["y"] = 47.2,
+["zone"] = Z["THUNDER_BLUFF"]
 },
 ["sheendra-tallgrass"] = {
 ["faction"] = "Horde",
@@ -2484,7 +2363,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1444,
 ["name"] = "Sheendra Tallgrass",
 ["x"] = 74.5,
-["y"] = 42.9,
+["y"] = 42.8,
 ["zone"] = Z["FERALAS"]
 },
 ["uthan-stillwater"] = {
@@ -2528,13 +2407,8 @@ Z["DUSTWALLOW_MARSH"]
 [12207] = "Giant Egg",
 [13758] = "Raw Redgill",
 [13759] = "Raw Nightfin Snapper",
-[13760] = "Raw Sunscale Salmon",
-[13889] = "Raw Whitescale Salmon",
-[13939] = "Recipe: Spotted Yellowtail",
 [13941] = "Recipe: Filet of Redgill",
 [13945] = "Recipe: Nightfin Soup",
-[13946] = "Recipe: Poached Sunscale Salmon",
-[13949] = "Recipe: Baked Salmon",
 [159] = "Refreshing Spring Water",
 [16072] = "Expert Cookbook",
 [16083] = "Expert Fishing - The Bass and You",
@@ -2554,7 +2428,7 @@ Z["DUSTWALLOW_MARSH"]
 [6328] = "Recipe: Longjaw Mud Snapper",
 [6330] = "Recipe: Bristle Whisker Catfish",
 [6529] = "Shiny Bauble",
-[6530] = "Nightcrawler",
+[6530] = "Nightcrawlers",
 [6532] = "Bright Baubles",
 [6533] = "Aquadynamic Fish Attractor",
 [7974] = "Zesty Clam Meat",
@@ -2583,33 +2457,10 @@ Z["FERALAS"]
 Z["FERALAS"]
 }
 },
-[13760] = {
-["kind"] = "fish",
-["note"] = "Fish inland Feralas, excluding Jademir Lake. Keep useful fish for Cooking; catches vary by time of day.",
-["zones"] = {
-Z["FERALAS"]
-}
-},
-[13889] = {
-["kind"] = "fish",
-["note"] = "Later fishing catch; not needed to reach Cooking 225.",
-["zones"] = {
-Z["FERALAS"]
-}
-},
-[13939] = {
-["kind"] = "supply"
-},
 [13941] = {
 ["kind"] = "supply"
 },
 [13945] = {
-["kind"] = "supply"
-},
-[13946] = {
-["kind"] = "supply"
-},
-[13949] = {
 ["kind"] = "supply"
 },
 [159] = {
@@ -2784,11 +2635,15 @@ Z["DUSTWALLOW_MARSH"]
 {
 6529,
 1
+},
+{
+159,
+20
 }
 },
 ["source"] = "https://www.wow-professions.com/forever/fishing-and-cooking-leveling-guide",
-["sourceDate"] = "2026-10-24",
-["sourceHash"] = "cac173a28fb20bc919d89c5f61fed71b08a25a8d7b28c112b5a4c0017c4fcbce",
+["sourceDate"] = "2026-11-20",
+["sourceHash"] = "ada748b581fcd2085a223a850e07bfc923af6a03803164b095db1dcc8242f480",
 ["supplies"] = {
 {
 ["faction"] = "Neutral",
@@ -2820,9 +2675,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "gikkix",
 ["items"] = {
-[13939] = true,
 [13945] = true,
-[13946] = true,
 [159] = true,
 [6289] = true,
 [6303] = true,
@@ -2831,7 +2684,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1446,
 ["name"] = "Gikkix",
 ["x"] = 66.7,
-["y"] = 22.2,
+["y"] = 22.1,
 ["zone"] = Z["TANARIS"]
 },
 {
@@ -2894,7 +2747,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1413,
 ["name"] = "Kilxx",
-["x"] = 62.7,
+["x"] = 62.8,
 ["y"] = 38.2,
 ["zone"] = Z["THE_BARRENS"]
 },
@@ -2908,8 +2761,8 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1442,
 ["name"] = "Kulwia",
-["x"] = 45.4,
-["y"] = 59.4,
+["x"] = 45.3,
+["y"] = 59.3,
 ["zone"] = Z["STONETALON_MOUNTAINS"]
 },
 {
@@ -2958,18 +2811,15 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1456,
 ["name"] = "Naal Mistrunner",
-["x"] = 51.4,
-["y"] = 52.7,
+["x"] = 51.3,
+["y"] = 52.6,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "nyalah-brightfire",
 ["items"] = {
-[159] = true,
-[6325] = true,
-[6326] = true,
-[6328] = true
+[159] = true
 },
 ["mapID"] = 2521,
 ["name"] = "Nyalah Brightfire",
@@ -2985,7 +2835,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1434,
 ["name"] = "Old Man Heming",
-["x"] = 27.5,
+["x"] = 27.4,
 ["y"] = 77.1,
 ["zone"] = Z["STRANGLETHORN_VALE"]
 },
@@ -2999,14 +2849,31 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1458,
 ["name"] = "Ronald Burch",
 ["x"] = 62.5,
-["y"] = 43.3,
+["y"] = 43.5,
 ["zone"] = Z["UNDERCITY"]
+},
+{
+["faction"] = "Horde",
+["id"] = "sewa-mistrunner",
+["items"] = {
+[6256] = true,
+[6325] = true,
+[6330] = true,
+[6529] = true,
+[6530] = true,
+[6532] = true,
+[6533] = true
+},
+["mapID"] = 1456,
+["name"] = "Sewa Mistrunner",
+["x"] = 55.9,
+["y"] = 47.2,
+["zone"] = Z["THUNDER_BLUFF"]
 },
 {
 ["faction"] = "Horde",
 ["id"] = "sheendra-tallgrass",
 ["items"] = {
-[13949] = true,
 [6256] = true,
 [6530] = true,
 [6532] = true
@@ -3014,7 +2881,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1444,
 ["name"] = "Sheendra Tallgrass",
 ["x"] = 74.5,
-["y"] = 42.9,
+["y"] = 42.8,
 ["zone"] = Z["FERALAS"]
 },
 {
@@ -3050,6 +2917,12 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 ["title"] = "Fishing + Cooking",
+["stepProgressMigrations"] = {
+["cooking-275-300"] = {
+"cooking-250-285",
+"cooking-285-300"
+}
+},
 ["tools"] = {
 {
 ["itemID"] = 6256,

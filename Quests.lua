@@ -55,10 +55,14 @@ function module:InitializeQuests()
 	AddQuest(8307,		Z.SILITHUS,					51.8,	39.0,	"Neutral")
 	AddQuest(8313,		Z.SILITHUS, 				51.8, 	39.0, 	"Neutral")
 	AddQuest(8586,		Z.TANARIS,					52.6,	28.0,	"Neutral")
+	AddQuest(92433, Z.MOUNT_HYJAL, 15.6, 50.1, "Alliance")
     AddQuest(92553, 	Z.ZEPHRAS_ISLE, 			43.9, 43.9, 	"Neutral")
     AddQuest(93317, 	Z.ZEPHRAS_ISLE, 			60.6, 72.6, 	"Neutral")
 	-- Additional sources verified against Wowhead Forever.
+	AddQuest(95121, Z.RIVERGLADES, 78.8, 54.2, "Neutral")
+	AddQuest(95162, Z.RIVERGLADES, 70.0, 29.4, "Horde")
 	AddQuest(95697, Z.ORGRIMMAR, 57.4, 53.4, "Horde")
+	AddQuest(97119, Z.MOUNT_HYJAL, 13.0, 52.9, "Horde")
 
 	self.InitializeQuests = nil
 end

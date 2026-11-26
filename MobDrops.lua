@@ -44,5 +44,28 @@ function module:InitializeMobDrops()
 	AddMob(4003, "Windshear Geomancer", Z.STONETALON_MOUNTAINS, 73.8, 60.2)
 	AddMob(14354,	L["Pusillin"],				Z.DIRE_MAUL, 0, 0)
 
+	AddMob(752, "Marsh Oracle", Z.SWAMP_OF_SORROWS, 0, 0)
+	AddMob(4323, "Searing Hatchling", Z.DUSTWALLOW_MARSH, 37.6, 74.0)
+	AddMob(4357, "Bloodfen Lashtail", Z.DUSTWALLOW_MARSH, 0, 0)
+	AddMob(5254, "Woodpaw Mystic", Z.FERALAS, 0, 0)
+	AddMob(6508, "Venomhide Ravasaur", Z.UNGORO_CRATER, 0, 0)
+	AddMob(258966, "Slavecrusher Grox", "Krol'dok Stronghold", 0, 0)
+
+	AddMob(1106, "Lost One Cook", Z.SWAMP_OF_SORROWS, 0, 0)
+	AddMob(9736, L["Quartermaster Zigris"], Z.BLACKROCK_SPIRE, 0, 0)
+
+	AddMob(8602, "Monstrous Plaguebat", Z.EASTERN_PLAGUELANDS, 62.5, 32.5)
+	AddMob(249224, "Child of Tortolla", Z.MOUNT_HYJAL, 36.0, 45.4)
+	AddMob(7434, "Frostsaber Pride Watcher", Z.WINTERSPRING, 49.6, 9.7)
+	AddMob(7886, "Spitelash Enchantress", Z.AZSHARA, 69.5, 82.5)
+
+	-- Additional Forever sources verified against Icy Veins.
+	AddMob(7379, "Deadwind Ogre Mage", Z.DEADWIND_PASS, 51.8, 59.4)
+	AddMob(249225, "Ghostfang Alpha", Z.MOUNT_HYJAL, 25.9, 42.1)
+	AddMob(253214, "Ravasaur Hunter", Z.THE_SHAPERS_TERRACE, 0, 0)
+	AddMob(262697, "Ravasaur Trapper", Z.THE_SHAPERS_TERRACE, 0, 0)
+
+	AddMob(7446, "Rabid Shardtooth", Z.WINTERSPRING, 56.4, 71.2)
+
 	self.InitializeMobDrops = nil
 end

@@ -1,3 +1,4 @@
+-- Generated candidate; review before replacing the installed module guide.
 local _, private = ...
 local addon = private.addon
 if not addon then return end
@@ -58,21 +59,6 @@ module.Guide = {
 },
 ["spellID"] = 2540,
 ["title"] = "Roasted Boar Meat"
-},
-{
-["count"] = 55,
-["materials"] = {
-{
-2678,
-55
-},
-{
-6889,
-55
-}
-},
-["spellID"] = 8604,
-["title"] = "Herb Baked Egg"
 }
 }
 }
@@ -148,32 +134,6 @@ module.Guide = {
 ["count"] = 55,
 ["materials"] = {
 {
-159,
-55
-},
-{
-5503,
-55
-}
-},
-["spellID"] = 6499,
-["title"] = "Boiled Clams"
-},
-{
-["count"] = 55,
-["materials"] = {
-{
-2673,
-55
-}
-},
-["spellID"] = 2541,
-["title"] = "Coyote Steak"
-},
-{
-["count"] = 55,
-["materials"] = {
-{
 4536,
 55
 },
@@ -203,36 +163,6 @@ module.Guide = {
 },
 ["spellID"] = 7755,
 ["title"] = "Bristle Whisker Catfish"
-},
-{
-["count"] = 40,
-["materials"] = {
-{
-2674,
-40
-},
-{
-2678,
-40
-}
-},
-["spellID"] = 2544,
-["title"] = "Crab Cake"
-},
-{
-["count"] = 35,
-["materials"] = {
-{
-2677,
-35
-},
-{
-2678,
-35
-}
-},
-["spellID"] = 2546,
-["title"] = "Dry Pork Ribs"
 },
 {
 ["count"] = 35,
@@ -349,19 +279,34 @@ module.Guide = {
 {
 ["from"] = 150,
 ["id"] = "150-175",
-["note"] = "Choose Curiously Tasty Omelet, or the Horde Hot Lion Chops alternative. Obtain the recipe and ingredients before starting.",
+["note"] = "Choose Goblin Deviled Clams, Curiously Tasty Omelet, or the Horde Hot Lion Chops route. Check recipe requirements before buying ingredients.",
 ["to"] = 175,
 ["variants"] = {
 {
-["count"] = 25,
+["count"] = 30,
 ["materials"] = {
 {
 2692,
-25
+30
+},
+{
+5504,
+30
+}
+},
+["spellID"] = 6500,
+["title"] = "Goblin Deviled Clams"
+},
+{
+["count"] = 30,
+["materials"] = {
+{
+2692,
+30
 },
 {
 3685,
-25
+30
 }
 },
 ["spellID"] = 3376,
@@ -388,45 +333,45 @@ module.Guide = {
 {
 ["from"] = 175,
 ["id"] = "175-225",
-["note"] = "Recipes become yellow near the target; allow extra ingredients. Turtle Bisque requires its faction quest.",
+["note"] = "Recipes become yellow near the target. If you need the Soothing Turtle Bisque recipe, bring 10 Turtle Meat and 1 Soothing Spices to Chef Jessen in Southshore (Alliance, 555) or Christoph Jeffcoat in Tarren Mill (Horde, 7321). Budget this turn-in separately from the crafts.",
 ["to"] = 225,
 ["variants"] = {
 {
-["count"] = 50,
-["materials"] = {
-{
-8365,
-50
-}
-},
-["spellID"] = 20916,
-["title"] = "Mithril Headed Trout"
-},
-{
-["count"] = 50,
+["count"] = 55,
 ["materials"] = {
 {
 2692,
-50
+55
 },
 {
 12184,
-50
+55
 }
 },
 ["spellID"] = 15855,
 ["title"] = "Roast Raptor"
 },
 {
-["count"] = 50,
+["count"] = 55,
+["materials"] = {
+{
+8365,
+55
+}
+},
+["spellID"] = 20916,
+["title"] = "Mithril Headed Trout"
+},
+{
+["count"] = 55,
 ["materials"] = {
 {
 3712,
-50
+55
 },
 {
 3713,
-50
+55
 }
 },
 ["spellID"] = 3400,
@@ -453,164 +398,78 @@ module.Guide = {
 ["id"] = "artisan",
 ["steps"] = {
 {
+["note"] = "Complete Artisan Cooking first. Choose Spotted Yellowtail or Filet of Redgill based on price or what you caught. The quantities are estimates. At 285, switch to Nightfin Soup for more reliable skill gains.",
+["to"] = 285,
 ["from"] = 225,
-["id"] = "225-275",
-["note"] = "Complete Artisan training first. Choose one recipe and budget about 65 crafts. Older recipes may remain useful up to 285.",
-["to"] = 275,
+["id"] = "225-285",
 ["variants"] = {
 {
-["count"] = 65,
+["recipeItemID"] = 13939,
+["note"] = "Learn Recipe: Spotted Yellowtail from Gikkix at Steamwheedle Port.",
+["count"] = 72,
+["title"] = "Spotted Yellowtail",
 ["materials"] = {
 {
 4603,
-65
+72
 }
 },
-["spellID"] = 18238,
-["title"] = "Spotted Yellowtail"
+["shoppingRequirements"] = {
+{
+13939,
+1
+}
+},
+["spellID"] = 18238
 },
 {
-["count"] = 65,
+["recipeItemID"] = 13941,
+["note"] = "Learn Recipe: Filet of Redgill from Kelsey Yance in Booty Bay.",
+["count"] = 72,
+["title"] = "Filet of Redgill",
 ["materials"] = {
 {
 13758,
-65
+72
 }
 },
-["spellID"] = 18241,
-["title"] = "Filet of Redgill"
-},
+["shoppingRequirements"] = {
 {
-["count"] = 65,
-["materials"] = {
-{
-1179,
-65
-},
-{
-2692,
-65
-},
-{
-7974,
-130
+13941,
+1
 }
 },
-["spellID"] = 20626,
-["title"] = "Undermine Clam Chowder"
-},
-{
-["count"] = 65,
-["materials"] = {
-{
-3713,
-130
-},
-{
-12207,
-65
-}
-},
-["spellID"] = 15933,
-["title"] = "Monster Omelet"
-},
-{
-["count"] = 65,
-["materials"] = {
-{
-3713,
-65
-},
-{
-12208,
-65
-}
-},
-["spellID"] = 22480,
-["title"] = "Tender Wolf Steak"
-}
-}
-},
-{
-["from"] = 275,
-["id"] = "275-285",
-["note"] = "Use Nightfin Soup or Poached Sunscale Salmon. Save remaining ingredients for the next step.",
-["to"] = 285,
-["variants"] = {
-{
-["count"] = 14,
-["materials"] = {
-{
-13760,
-14
-}
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-},
-{
-["count"] = 14,
-["materials"] = {
-{
-159,
-14
-},
-{
-13759,
-14
-}
-},
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
+["spellID"] = 18241
 }
 }
 },
 {
 ["from"] = 285,
 ["id"] = "285-300",
-["note"] = "Continue your fish recipe; these turn yellow at 290. Alternatively complete Desert Recipe and Sharing the Knowledge in Silithus to learn Smoked Desert Dumplings, requiring Cooking 285.",
 ["to"] = 300,
+["note"] = "Buy the recipe from Gikkix in Steamwheedle Port. Bring one Refreshing Spring Water per craft. Nightfin Soup turns yellow at 290, so bring spare ingredients if needed.",
 ["variants"] = {
 {
-["count"] = 21,
-["materials"] = {
-{
-13760,
-21
-}
-},
-["spellID"] = 18244,
-["title"] = "Poached Sunscale Salmon"
-},
-{
-["count"] = 21,
+["spellID"] = 18243,
+["title"] = "Nightfin Soup",
+["count"] = 18,
 ["materials"] = {
 {
 159,
-21
+18
 },
 {
 13759,
-21
+18
 }
 },
-["spellID"] = 18243,
-["title"] = "Nightfin Soup"
-},
+["recipeItemID"] = 13945,
+["shoppingRequirements"] = {
 {
-["count"] = 15,
-["materials"] = {
-{
-3713,
-15
-},
-{
-20424,
-15
+13945,
+1
 }
-},
-["spellID"] = 24801,
-["title"] = "Smoked Desert Dumplings"
+}
 }
 }
 }
@@ -622,7 +481,7 @@ module.Guide = {
 ["locationIDs"] = {
 "dirge-quikcleave"
 },
-["note"] = "At level 35 and Cooking 225, complete Clamlette Surprise with Dirge Quikcleave in Gadgetzan. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss. Horde: Zamja in Orgrimmar offers To Gadgetzan You Go! Alliance: Daryl Riknussun in Ironforge offers I Know A Guy...",
+["note"] = "At level 35 and Cooking 225, complete Clamlette Surprise (6610) with Dirge Quikcleave in Gadgetzan. Bring 12 Giant Eggs, 10 Zesty Clam Meat and 20 Alterac Swiss. Horde: Zamja in Orgrimmar offers To Gadgetzan You Go! (6611) Alliance: Daryl Riknussun in Ironforge offers I Know A Guy... (6612)",
 ["rank"] = "Artisan Cooking",
 ["skill"] = 225
 }
@@ -631,6 +490,102 @@ module.Guide = {
 ["id"] = "forever-cooking-1-225",
 ["introduction"] = "Choose an accessible recipe and stop at the target skill. Craft counts are estimates; yellow recipes may need extra materials. Use a cooking fire.",
 ["locations"] = {
+[1430] = {
+["faction"] = "Alliance",
+["mapID"] = 1429,
+["name"] = "Tomas",
+["x"] = 44.3,
+["y"] = 66.0,
+["zone"] = Z["ELWYNN_FOREST"]
+},
+[1699] = {
+["faction"] = "Alliance",
+["mapID"] = 1426,
+["name"] = "Gremlock Pilsnor",
+["x"] = 47.6,
+["y"] = 52.3,
+["zone"] = Z["DUN_MOROGH"]
+},
+[257006] = {
+["faction"] = "Neutral",
+["mapID"] = 2521,
+["name"] = "Nyalah Brightfire",
+["x"] = 60.6,
+["y"] = 72.7,
+["zone"] = Z["ZEPHRAS_ISLE"]
+},
+[3026] = {
+["faction"] = "Horde",
+["mapID"] = 1456,
+["name"] = "Aska Mistrunner",
+["x"] = 50.9,
+["y"] = 53.1,
+["zone"] = Z["THUNDER_BLUFF"]
+},
+[3067] = {
+["faction"] = "Horde",
+["mapID"] = 1412,
+["name"] = "Pyall Silentstride",
+["x"] = 45.0,
+["y"] = 61.7,
+["zone"] = Z["MULGORE"]
+},
+[3191] = {
+["faction"] = "Horde",
+["mapID"] = 1411,
+["name"] = "Cook Torka",
+["x"] = 51.1,
+["y"] = 42.5,
+["zone"] = Z["DUROTAR"]
+},
+[3399] = {
+["faction"] = "Horde",
+["mapID"] = 1454,
+["name"] = "Zamja",
+["x"] = 57.5,
+["y"] = 53.9,
+["zone"] = Z["ORGRIMMAR"]
+},
+[4210] = {
+["faction"] = "Alliance",
+["mapID"] = 1457,
+["name"] = "Alegorn",
+["x"] = 48.9,
+["y"] = 21.2,
+["zone"] = Z["DARNASSUS"]
+},
+[4552] = {
+["faction"] = "Horde",
+["mapID"] = 1458,
+["name"] = "Eunice Burch",
+["x"] = 62.3,
+["y"] = 44.7,
+["zone"] = Z["UNDERCITY"]
+},
+[5159] = {
+["faction"] = "Alliance",
+["mapID"] = 1455,
+["name"] = "Daryl Riknussun",
+["x"] = 60.0,
+["y"] = 36.7,
+["zone"] = Z["IRONFORGE"]
+},
+[5482] = {
+["faction"] = "Alliance",
+["mapID"] = 1453,
+["name"] = "Stephen Ryback",
+["x"] = 78.2,
+["y"] = 53.2,
+["zone"] = Z["STORMWIND_CITY"]
+},
+[6286] = {
+["faction"] = "Alliance",
+["mapID"] = 1438,
+["name"] = "Zarrin",
+["x"] = 57.1,
+["y"] = 61.3,
+["zone"] = Z["TELDRASSIL"]
+},
 ["dirge-quikcleave"] = {
 ["faction"] = "Neutral",
 ["mapID"] = 1446,
@@ -641,21 +596,17 @@ module.Guide = {
 }
 },
 ["materialNames"] = {
-[1179] = "Ice Cold Milk",
+[13759] = "Raw Nightfin Snapper",
+[13945] = "Recipe: Nightfin Soup",
+[159] = "Refreshing Spring Water",
 [12184] = "Raptor Flesh",
 [12207] = "Giant Egg",
-[12208] = "Tender Wolf Meat",
 [13758] = "Raw Redgill",
-[13759] = "Raw Nightfin Snapper",
-[13760] = "Raw Sunscale Salmon",
-[159] = "Refreshing Spring Water",
+[13939] = "Recipe: Spotted Yellowtail",
+[13941] = "Recipe: Filet of Redgill",
 [16072] = "Expert Cookbook",
-[20424] = "Sandworm Meat",
 [2672] = "Stringy Wolf Meat",
-[2673] = "Coyote Meat",
-[2674] = "Crawler Meat",
 [2675] = "Crawler Claw",
-[2677] = "Boar Ribs",
 [2678] = "Mild Spices",
 [2692] = "Hot Spices",
 [3173] = "Bear Meat",
@@ -668,21 +619,29 @@ module.Guide = {
 [4536] = "Shiny Red Apple",
 [4603] = "Raw Spotted Yellowtail",
 [5469] = "Strider Meat",
-[5503] = "Clam Meat",
 [5504] = "Tangy Clam Meat",
 [6289] = "Raw Longjaw Mud Snapper",
 [6291] = "Raw Brilliant Smallfish",
 [6303] = "Raw Slitherskin Mackerel",
 [6308] = "Raw Bristle Whisker Catfish",
 [6361] = "Raw Rainbow Fin Albacore",
-[6889] = "Small Egg",
 [769] = "Chunk of Boar Meat",
 [7974] = "Zesty Clam Meat",
 [8365] = "Raw Mithril Head Trout",
 [8932] = "Alterac Swiss"
 },
 ["materialSources"] = {
-[1179] = {
+[13759] = {
+["zones"] = {
+Z["FERALAS"]
+},
+["kind"] = "fish",
+["note"] = "Fish inland Feralas, excluding Jademir Lake. Keep useful fish for Cooking; catches vary by time of day."
+},
+[13945] = {
+["kind"] = "supply"
+},
+[159] = {
 ["kind"] = "supply"
 },
 [12184] = {
@@ -699,14 +658,6 @@ Z["ARATHI_HIGHLANDS"]
 Z["TANARIS"]
 }
 },
-[12208] = {
-["kind"] = "drop",
-["note"] = "Collect from level-appropriate wolves.",
-["zones"] = {
-Z["THE_HINTERLANDS"],
-Z["FERALAS"]
-}
-},
 [13758] = {
 ["kind"] = "fish",
 ["note"] = "Fish inland water, excluding Jademir Lake.",
@@ -714,32 +665,14 @@ Z["FERALAS"]
 Z["FERALAS"]
 }
 },
-[13759] = {
-["kind"] = "fish",
-["note"] = "Fish inland water; Nightfin availability depends on time of day.",
-["zones"] = {
-Z["FERALAS"]
-}
+[13939] = {
+["kind"] = "supply"
 },
-[13760] = {
-["kind"] = "fish",
-["note"] = "Fish inland water; Sunscale availability depends on time of day.",
-["zones"] = {
-Z["FERALAS"]
-}
-},
-[159] = {
+[13941] = {
 ["kind"] = "supply"
 },
 [16072] = {
 ["kind"] = "supply"
-},
-[20424] = {
-["kind"] = "drop",
-["note"] = "Collect from Dredge Strikers and Dredge Crushers.",
-["zones"] = {
-Z["SILITHUS"]
-}
 },
 [2672] = {
 ["kind"] = "drop",
@@ -749,33 +682,11 @@ Z["DUROTAR"],
 Z["ELWYNN_FOREST"]
 }
 },
-[2673] = {
-["kind"] = "drop",
-["note"] = "Loot coyotes. Alternatively buy the ingredient at the Auction House.",
-["zones"] = {
-Z["WESTFALL"]
-}
-},
-[2674] = {
-["kind"] = "drop",
-["note"] = "Loot crawlers. Alternatively buy the ingredient at the Auction House.",
-["zones"] = {
-Z["WESTFALL"],
-Z["DARKSHORE"]
-}
-},
 [2675] = {
 ["kind"] = "drop",
 ["note"] = "Loot crawlers. Alternatively buy the ingredient at the Auction House.",
 ["zones"] = {
 Z["WESTFALL"]
-}
-},
-[2677] = {
-["kind"] = "drop",
-["note"] = "Loot boars. Alternatively buy the ingredient at the Auction House.",
-["zones"] = {
-Z["REDRIDGE_MOUNTAINS"]
 }
 },
 [2678] = {
@@ -842,14 +753,6 @@ Z["MULGORE"],
 Z["THE_BARRENS"]
 }
 },
-[5503] = {
-["kind"] = "drop",
-["note"] = "Open looted clams. Alternatively buy the ingredient at the Auction House.",
-["zones"] = {
-Z["DARKSHORE"],
-Z["WESTFALL"]
-}
-},
 [5504] = {
 ["kind"] = "drop",
 ["note"] = "Open looted clams. Alternatively buy the ingredient at the Auction House.",
@@ -894,14 +797,6 @@ Z["ASHENVALE"]
 ["note"] = "Fish in coastal waters.",
 ["zones"] = {
 Z["DARKSHORE"],
-Z["WESTFALL"]
-}
-},
-[6889] = {
-["kind"] = "drop",
-["note"] = "Loot low-level birds. Alternatively buy the ingredient at the Auction House.",
-["zones"] = {
-Z["TELDRASSIL"],
 Z["WESTFALL"]
 }
 },
@@ -956,8 +851,8 @@ Z["DUSTWALLOW_MARSH"]
 }
 },
 ["source"] = "https://www.wow-professions.com/forever/cooking-leveling-guide",
-["sourceDate"] = "2026-10-24",
-["sourceHash"] = "864fedf418400cb180a7371ced1774571206cbce571eaf24ce774e45d2a15ffa",
+["sourceDate"] = "2026-11-20",
+["sourceHash"] = "f67ff1331210c5f12a5d544f188195971a3cd97e4d0162fa0214512cc5e7e529",
 ["supplies"] = {
 {
 ["faction"] = "Horde",
@@ -982,44 +877,26 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1421,
 ["name"] = "Andrew Hilbert",
 ["x"] = 43.2,
-["y"] = 40.7,
+["y"] = 40.8,
 ["zone"] = Z["SILVERPINE_FOREST"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "antelariaa-cloudgaze",
 ["items"] = {
-[1179] = true,
-[159] = true,
 [4470] = true,
 [4471] = true
 },
 ["mapID"] = 2521,
 ["name"] = "Antelariaa Cloudgaze",
-["x"] = 63.0,
+["x"] = 63.1,
 ["y"] = 77.8,
 ["zone"] = Z["ZEPHRAS_ISLE"]
-},
-{
-["faction"] = "Horde",
-["id"] = "bale",
-["items"] = {
-[1179] = true,
-[159] = true,
-[4470] = true,
-[4471] = true
-},
-["mapID"] = 1448,
-["name"] = "Bale",
-["x"] = 34.8,
-["y"] = 53.1,
-["zone"] = Z["FELWOOD"]
 },
 {
 ["faction"] = "Alliance",
 ["id"] = "brog-hamfist",
 ["items"] = {
-[159] = true,
 [4470] = true,
 [4471] = true
 },
@@ -1039,15 +916,14 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1424,
 ["name"] = "Christoph Jeffcoat",
-["x"] = 62.3,
-["y"] = 19.3,
+["x"] = 62.2,
+["y"] = 19.1,
 ["zone"] = Z["HILLSBRAD_FOOTHILLS"]
 },
 {
 ["faction"] = "Horde",
 ["id"] = "derak-nightfall",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1065,8 +941,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "dirge-quikcleave",
 ["items"] = {
-[1179] = true,
-[159] = true
+
 },
 ["mapID"] = 1446,
 ["name"] = "Dirge Quikcleave",
@@ -1091,7 +966,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Alliance",
 ["id"] = "emrul-riknussun",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1109,7 +983,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Alliance",
 ["id"] = "erika-tate",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1127,7 +1000,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Alliance",
 ["id"] = "fyldan",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1145,8 +1017,9 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "gikkix",
 ["items"] = {
-[1179] = true,
+[13945] = true,
 [159] = true,
+[13939] = true,
 [4603] = true,
 [6289] = true,
 [6303] = true,
@@ -1155,59 +1028,25 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1446,
 ["name"] = "Gikkix",
 ["x"] = 66.7,
-["y"] = 22.2,
+["y"] = 22.1,
 ["zone"] = Z["TANARIS"]
 },
 {
 ["faction"] = "Horde",
 ["id"] = "grimtak",
 ["items"] = {
-[1179] = true,
-[159] = true
+
 },
 ["mapID"] = 1411,
 ["name"] = "Grimtak",
-["x"] = 51.1,
+["x"] = 51.2,
 ["y"] = 42.6,
 ["zone"] = Z["DUROTAR"]
-},
-{
-["faction"] = "Neutral",
-["id"] = "himmik",
-["items"] = {
-[1179] = true,
-[159] = true,
-[4603] = true,
-[6289] = true,
-[6303] = true,
-[6308] = true
-},
-["mapID"] = 1452,
-["name"] = "Himmik",
-["x"] = 61.4,
-["y"] = 39.1,
-["zone"] = Z["WINTERSPRING"]
-},
-{
-["faction"] = "Neutral",
-["id"] = "jabbey",
-["items"] = {
-[1179] = true,
-[159] = true,
-[4470] = true,
-[4471] = true
-},
-["mapID"] = 1446,
-["name"] = "Jabbey",
-["x"] = 67.0,
-["y"] = 22.0,
-["zone"] = Z["TANARIS"]
 },
 {
 ["faction"] = "Horde",
 ["id"] = "jark",
 ["items"] = {
-[159] = true,
 [4470] = true,
 [4471] = true
 },
@@ -1221,7 +1060,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Neutral",
 ["id"] = "kelsey-yance",
 ["items"] = {
-[159] = true,
+[13941] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1259,7 +1098,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1413,
 ["name"] = "Kilxx",
-["x"] = 62.7,
+["x"] = 62.8,
 ["y"] = 38.2,
 ["zone"] = Z["THE_BARRENS"]
 },
@@ -1267,7 +1106,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Alliance",
 ["id"] = "kreg-bilmn",
 ["items"] = {
-[159] = true,
 [4470] = true,
 [4471] = true
 },
@@ -1296,7 +1134,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "moorat-longstride",
 ["items"] = {
-[159] = true,
 [4470] = true,
 [4471] = true
 },
@@ -1310,7 +1147,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "mrs-winters",
 ["items"] = {
-[159] = true,
 [4470] = true,
 [4471] = true
 },
@@ -1324,7 +1160,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "naal-mistrunner",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1334,16 +1169,19 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1456,
 ["name"] = "Naal Mistrunner",
-["x"] = 51.4,
-["y"] = 52.7,
+["x"] = 51.3,
+["y"] = 52.6,
 ["zone"] = Z["THUNDER_BLUFF"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "nyalah-brightfire",
 ["items"] = {
-[159] = true,
 [2678] = true,
+[2692] = true,
+[3713] = true,
+[4470] = true,
+[4471] = true,
 [4536] = true
 },
 ["mapID"] = 2521,
@@ -1356,7 +1194,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Alliance",
 ["id"] = "nyoma",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1374,8 +1211,7 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "oggmarr",
 ["items"] = {
-[1179] = true,
-[159] = true
+
 },
 ["mapID"] = 1445,
 ["name"] = "Ogg'marr",
@@ -1387,7 +1223,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "ronald-burch",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1398,7 +1233,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1458,
 ["name"] = "Ronald Burch",
 ["x"] = 62.5,
-["y"] = 43.3,
+["y"] = 43.5,
 ["zone"] = Z["UNDERCITY"]
 },
 {
@@ -1424,7 +1259,7 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1437,
 ["name"] = "Stuart Fleming",
 ["x"] = 8.1,
-["y"] = 58.2,
+["y"] = 58.3,
 ["zone"] = Z["WETLANDS"]
 },
 {
@@ -1464,7 +1299,7 @@ Z["DUSTWALLOW_MARSH"]
 },
 ["mapID"] = 1440,
 ["name"] = "Wik'Tar",
-["x"] = 11.7,
+["x"] = 11.8,
 ["y"] = 34.1,
 ["zone"] = Z["ASHENVALE"]
 },
@@ -1472,7 +1307,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "wulan",
 ["items"] = {
-[159] = true,
 [16072] = true,
 [2678] = true,
 [2692] = true,
@@ -1491,7 +1325,6 @@ Z["DUSTWALLOW_MARSH"]
 ["faction"] = "Horde",
 ["id"] = "xento",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1502,14 +1335,13 @@ Z["DUSTWALLOW_MARSH"]
 ["mapID"] = 1454,
 ["name"] = "Xen'to",
 ["x"] = 57.6,
-["y"] = 53.1,
+["y"] = 53.2,
 ["zone"] = Z["ORGRIMMAR"]
 },
 {
 ["faction"] = "Neutral",
 ["id"] = "zerril-softbreeze",
 ["items"] = {
-[159] = true,
 [2678] = true,
 [2692] = true,
 [3713] = true,
@@ -1522,21 +1354,15 @@ Z["DUSTWALLOW_MARSH"]
 ["x"] = 43.8,
 ["y"] = 43.9,
 ["zone"] = Z["ZEPHRAS_ISLE"]
-},
-{
-["faction"] = "Alliance",
-["id"] = "malygen",
-["items"] = {
-
-},
-["mapID"] = 1448,
-["name"] = "Malygen",
-["x"] = 62.3,
-["y"] = 25.6,
-["zone"] = Z["FELWOOD"]
 }
 },
 ["title"] = "Cooking",
+["stepProgressMigrations"] = {
+["225-300"] = {
+"225-285",
+"285-300"
+}
+},
 ["tools"] = {
 
 }
